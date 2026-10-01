@@ -1,0 +1,24 @@
+# Build outputs
+_output/
+dist/
+.cache/
+.jupyterlite.doit.db
+
+# Local-only test notebooks: never published, never committed
+tests/
+
+# Editor and OS cruft
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Safety net: instructor materials must never enter this repository.
+# They should live in a different folder entirely; this is belt and suspenders.
+*[Ii]nstructor*
+*[Ss]olution*
+*[Aa]nswer[Kk]ey*
+*_key.ipynb
+
+# local preview server log
+server.log

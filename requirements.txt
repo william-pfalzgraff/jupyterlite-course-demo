@@ -1,0 +1,13 @@
+# Build stack for the course's JupyterLite site.
+# These pins are the "frozen semester" guarantee: the deployed site runs whatever
+# these versions bake in. Refresh them when creating a site (see references/compatibility.md),
+# then leave them alone until the course is over.
+# Known-good set, tested together 2026-09-30:
+jupyterlite-core[all]==0.8.3
+jupyterlite-pyodide-kernel==0.8.5
+# Interactive plots and sliders (front-end halves; the Python halves are wheels in pypi/):
+ipympl==0.10.0
+ipywidgets==8.1.9
+jupyterlab_widgets==3.0.17
+# Uncomment if the course uses Plotly (its Jupyter extension comes from this package):
+# plotly==7.1.0

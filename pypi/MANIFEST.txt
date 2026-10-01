@@ -1,0 +1,8 @@
+MANIFEST.txt
+comm-0.2.3-py3-none-any.whl
+ipympl-0.10.0-py3-none-any.whl
+ipywidgets-8.1.9-py3-none-any.whl
+jupyterlab_widgets-3.0.17-py3-none-any.whl
+traitlets-5.16.1-py3-none-any.whl
+typing_extensions-4.16.0-py3-none-any.whl
+widgetsnbextension-4.0.16-py3-none-any.whl
