@@ -22,6 +22,20 @@ site like this one. The site was produced with that contribution's skill and scr
     .github/workflows/deploy.yml   builds and publishes the site on every push
     robots.txt          lets search engines index this demo (a course site would say Disallow)
 
+## The tooling behind the skill
+
+The skill's scripts and templates live here so they can be kept current without changes to the
+exchange page. The skill tells an assistant to clone this repository and use:
+
+    tools/audit_notebooks.py     scan a folder of notebooks for what behaves differently in the browser
+    tools/adapt_notebooks.py     apply the mechanical fixes to copies of the notebooks, with a change log
+    tools/scaffold_site.py       lay out a new site folder from templates/ and download the runtime wheels
+    templates/                   deploy workflow, site config, pinned requirements, gitignore, robots,
+                                 and a smoke-test notebook
+
+They need Python with `nbformat` (the JupyterLite build environment has it). This site was made
+with them. Everything outside `content/` is MIT licensed.
+
 ## Build it yourself
 
     python -m venv .venv && source .venv/bin/activate      # or a conda environment
