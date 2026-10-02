@@ -24,14 +24,17 @@ site like this one. The site was produced with that contribution's skill and scr
 
 ## The tooling behind the skill
 
-The skill's scripts and templates live here so they can be kept current without changes to the
-exchange page. The skill tells an assistant to clone this repository and use:
+The skill's scripts, templates and reference notes live here so they can be kept current without
+changes to the exchange page; the skill itself (`SKILL.md`) is on the exchange. The skill tells an assistant to clone this repository and use:
 
     tools/audit_notebooks.py     scan a folder of notebooks for what behaves differently in the browser
     tools/adapt_notebooks.py     apply the mechanical fixes to copies of the notebooks, with a change log
     tools/scaffold_site.py       lay out a new site folder from templates/ and download the runtime wheels
     templates/                   deploy workflow, site config, pinned requirements, gitignore, robots,
                                  and a smoke-test notebook
+    references/                  the skill's reference notes: audit checklist, browser-verified
+                                 compatibility table, site recipe, instructor-guide and student-handout
+                                 templates
 
 They need Python with `nbformat` (the JupyterLite build environment has it). This site was made
 with them. Everything outside `content/` is MIT licensed.
